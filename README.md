@@ -1,6 +1,6 @@
 #DAIENSO
 
-This repository contains materials about digital transformation for enterprises.
+This repository contains materials about DAIENSO Lab for IoT Edge Cloud Continuum.
 
 ## Authors
 
