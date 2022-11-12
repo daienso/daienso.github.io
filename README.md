@@ -1,4 +1,4 @@
-#DAIENSO
+# DAIENSO
 
 This repository contains materials about DAIENSO Lab for IoT Edge Cloud Continuum.
 
@@ -8,7 +8,8 @@ This repository contains materials about DAIENSO Lab for IoT Edge Cloud Continuu
 
 ## Content Copyright
 
-The content of the site is copyrighted with APACHE LICENSE 2.0
+The content of the site is copyrighted.
 
 ## Site template
+
 The site uses a template from Start BootStrap. See the corresponding license for the site template.
