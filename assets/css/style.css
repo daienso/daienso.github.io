@@ -166,15 +166,7 @@ section {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-/* Add the mobile full-width breakout here */
-.mobile-full-width {
-  width: 100vw !important;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-}
+
 }
 
 /*--------------------------------------------------------------
