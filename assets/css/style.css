@@ -166,6 +166,13 @@ section {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+  /* New code: forces images to span the full mobile width */
+  img {
+    width: 100% !important;   /* Forces the image to take up 100% width */
+    height: auto !important;  /* Keeps the aspect ratio from distorting */
+    display: block;           /* Removes unwanted blank space under the image */
+  }
 }
 
 /*--------------------------------------------------------------
