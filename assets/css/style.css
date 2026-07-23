@@ -1013,7 +1013,7 @@ section {
 }
 
 .pricing img {
-  padding: 30px 40px;
+  width: 100%;
 }
 
 .pricing ul {
