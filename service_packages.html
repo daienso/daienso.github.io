@@ -4,368 +4,468 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Services - DAIENSO Lab</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <!-- link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"-->
+  
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: FlexStart
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Template Name: Axis
+  * Template URL: https://bootstrapmade.com/axis-bootstrap-corporate-template/
+  * Updated: Sep 13 2025 with Bootstrap v5.3.8
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<body>
+<body class="index-page">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo1.png" alt="">
-        <img src="assets/img/logo.png" alt="">
-        
-      </a>
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/logo1.png" alt=""> 
+            <img src="assets/img/logo.png" alt=""> 
+            <!-- <h1 class="sitename">Axis</h1> -->
+          </a>
 
-      <nav id="navbar" class="navbar">
+        <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
                     
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
+  <main class="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
+    <!-- ======= Page Title ======= -->
+    <div class="page-title">
+        <div class="breadcrumbs">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Services</a></li>
+              <li class="breadcrumb-item active current">Packages</li>
+            </ol>
+          </nav>
+        </div>
+  
+        <div class="title-wrapper">
+          <h1>Toward Business Transformation</h1>
+          <p>Led by <b><a href="https://truong.rdsea.io/"> Dr. Hong-Linh Truong</a></b>, we provide high-quality services for enterprises transforming their businesses</b> with modern Data Analytics and Platforms, Data Science, AI/ML/LLMs Systems, Cloud Modernization, and AI Assistant/Agent.</p>
+        </div>
+      </div><!-- End Page Title -->
 
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Services</li>
-        </ol>
-        <h2>Packages</h2>
+    <!-- Starter consulting Section -->
+    <section id="consulting" class="services section">
+        <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">CONSULTING AND DEVELOPING SOLUTIONS</span>
+        <p>Flexible Packages for Consulting and Developing Solutions</p>
+      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      </div>
-    </section><!-- End Breadcrumbs -->
+        <div class="row gy-5">
 
-    <section class="inner-page">
-      <div class="container">
-        <header class="section-header">
-          <h4><a href=""><b>Toward Business Transformation</b></a></h4>
-        </header>
-        
-          <div class="row text-center">
-            <p>
-                Led by <b><a href="https://truong.rdsea.io/"> Dr. Hong-Linh Truong</a></b>, we provide high-quality services including <b>deep training programs (online, hybrid), effective consulting, and innovative solutions for companies transforming their businesses</b> with modern Data Analytics and Platforms, Data Science, AI/ML/LLMs Systems, Cloud Modernization, and AI Assistant/Agent. 
-            </p>
-          </div>
-        
-      </div>
-    </section>
-
-   
-
-    <section id="consulting" class="pricing" style="background-color: #f6f9ff;">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h4><a href=""><b>CONSULTING AND DEVELOPING SOLUTIONS</b></a></h4>
-          <p></p>
-        </header>
-
-        <div class="row gy-4" data-aos="fade-left">
-
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="box">
-              <h3 style="color: #65c600;">ON-DEMAND</h3>
-              <p>Assess, analysis, and recommend for particular needs </p>
-              
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h3 style="color: #65c600;"><b>ON-DEMAND</b></h3>
+              <p>Assess, analysis, and recommend for particular needs.</p>
               <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
               <ul>
-                <li>short time period</li>
-                <li><b>1-5 cycles, 4 hours/1 cycle</b></li>
-                <li>including a meeting in 1 hour for discussion</li>
+              <li>short time period</li>
+              <li><b>1-5 cycles, 4 hours/1 cycle</b></li>
+              <li>including a meeting in 1 hour for discussion</li>
               </ul>
+              <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
               <a href="#" class="btn-buy">Pre-study, Consulting</a>
             </div>
-          </div>
+          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="box">
-              <!-- <span class="featured">Featured</span> -->
-              <h3 style="color: #ff901c;">PROJECT-BASED</h3>
-              <p>Research, develop, and deploy solutions and co-develop products </p>
-              <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
-              <ul>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h3 style="color: #fb8500;"><b>PROJECT-BASED</b></h3>
+                <p>Research, develop, and deploy solutions and co-develop products.</p>
+                <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+                <ul>
                 <li>within a project</li>
                 <li><b>according to specific project</b></li>
                 <li>according to project's scopes</li>
-              </ul>
-              <a href="#" class="btn-buy">Solutions/Products Development</a>
-            </div>
-          </div>
+                </ul>
+                <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+                <a href="#" class="btn-buy">Solutions, Products Development</a>
+              </div>
+          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="box">
-              <h3 style="color: #ff0071;">REGULAR</h3>
-              <p>Assess, analysis, and recommend for long-run transformation and modernization</p>
-              <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
-              <ul>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h3 style="color: #ff0071;"><b>REGULAR</b></h3>
+                <p>Assess, analysis, and recommend for long-run transformation and modernization.</p>
+                <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+                <ul>
                 <li>long time period</li>
                 <li><b>3-6-9-12 months</b></li>
                 <li>including 2-4 monthly meetings (1 hour/meeting) for discussion</li>
-              </ul>
-              <a href="#" class="btn-buy">Consulting, Solutions Development</a>
+                </ul>
+                <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+                <a href="#" class="btn-buy">Consulting, Solutions Development</a>
+              </div>
+          </div><!-- End Service Item -->
+
+          
+
+        </div>
+
+        
+      </div>
+
+      
+    </section> 
+
+    <section id="consulting process" class="service-details section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-content">
+                <div class="service-process" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Our Consulting Process</h3>
+    
+                    <div class="process-timeline">
+                      <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                          <h4>Understanding Business Needs</h4>
+                          <p>The process initiates with the presentation of the problems and requirements by the enterprise, followed by a collaborative discussion and establishment of the key steps and required resources, concluding with an agreements on scoping.</p>
+                          <p><i>This step may take 1-2 free hours meeting.</i></p>
+                        </div>
+                      </div>
+    
+                      <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                          <h4>Initial Consulting Contract (1-5 Cycles)</h4>
+                          <p>In accordance with the finalized scope of work, we establish a short time period pre-study/assessment contract.</p>
+                          <p><i>Some of the advisory topics include (i) feasibility analysis and assessment, (ii) High-level architecture design, (iii) Evaluations of solution candidates.</i></p>
+                        </div>
+                      </div>
+    
+                      <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                          <h4>Scaling for long term modernization</h4>
+                          <p>We will then move forward with project-based or regular consulting to drive continuous modernization and transformation if required.</p>
+                        </div>
+                      </div>
+    
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+      
+    <!-- Starter training Section -->
+    <section id="core" class="why-us section">
+        <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">TRAINING AND BUILDING TEAMS</span>
+        <h4>Core courses in Data Platforms, AI/ML/LLMs Systems, Cloud Modernization</h4>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-1-square"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h3>Digital Transformation</h3>
+                        <p><i class="bi bi-check"></i> Modernizing, Transforming and Automating Business and Operation Workflows with IoT, Data Analytics, and Cloud Services.</p>
+                        <p><i class="bi bi-check"></i> Making Data-centric Decision and Building Digital Workforce.</p>
+                      </div>
+                    </div>
+                  </div><!-- End Feature Item -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-2-square"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h3>Data Platform Fundamentals and Technologies</h3>
+                        <p><i class="bi bi-check"></i> Fundamentals and technologies for versatile data journeys: including architectures,  data lifecycle management, data lakehouse and tiering,  workflow analysis, and near real-time stream processing.</p>
+                        
+                      </div>
+                    </div>
+                  </div><!-- End Feature Item -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-3-square"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h3>AI Agents, GenAI Services, and Agentic Systems</h3>
+                        <p><i class="bi bi-check"></i> Fundamentals on large language models (LLMs) and agentic systems utilization, services and application integration for development and business tasks.</p>
+                        
+                      </div>
+                    </div>
+                  </div><!-- End Feature Item -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-4-square"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h3>AI Implementation Strategies, Trustworthiness and Risks</h3>
+                        <p><i class="bi bi-check"></i> Understand Potentials, Requirements, and How to apply: ML and AI/GenAI capabilities and their relationships for common use cases.</p>
+                        <p><i class="bi bi-check"></i> Trustworthy AI/GenAI, Principles and components of trustworthiness, potential risks and risk governance frameworks.</p>
+
+                      </div>
+                    </div>
+                  </div><!-- End Feature Item -->
             </div>
           </div>
-        </div>
-                
-        <!-- <img src="assets/img/products/ConsultingSteps.png" alt="" class="img-fluid"> -->
-                
       </div>
-     
 
-    </section><!-- End Consulting Section -->
+    </section> 
 
+    <section id="practice" class="why-us section">
+        <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        
+        <h4>Customized courses with hands-on for practitioners</h4>
+      </div><!-- End Section Title -->
 
-      <section id="training" class="pricing">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-1-square"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h3>Data Quality Handling</h3>
+                        <p><i class="bi bi-check"></i> High level view on Data Quality & Key principles to handle Data Quality.</p>
+                        <p><i class="bi bi-check"></i> Data quality in real-time systems.</p>
+                        <p><i class="bi bi-check"></i> Tools and hands-on.</p>
+                      </div>
+                    </div>
+                  </div><!-- End Feature Item -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-2-square"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h3>Data Analytics for Operations</h3>
+                        <p><i class="bi bi-check"></i> Data analytics for common use cases and suitable solutions for data platforms and infrastructure operations.</p>
+                        <p><i class="bi bi-check"></i> Workflows, Tools and hands-on.</p>
+                        
+                      </div>
+                    </div>
+                  </div><!-- End Feature Item -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-3-square"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h3>Machine Learning (ML) Engineering</h3>
+                        <p><i class="bi bi-check"></i> Preparing data, building, training, and deploying machine learning models and services.</p>
+                        <p><i class="bi bi-check"></i> Workflows, Tools and techniques.</p>
+                        <p><i class="bi bi-check"></i> Hands-on with real cases of customers/practitioners.</p>
+                      </div>
+                    </div>
+                  </div><!-- End Feature Item -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-4-square"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h3>Workflow Systems and Programming Specialization</h3>
+                        <p><i class="bi bi-check"></i> Workflow and Distributed Programming Models.</p>
+                        <p><i class="bi bi-check"></i> Airflow Introduction and Hands-on basic workflow.</p>
+                        <p><i class="bi bi-check"></i> Managing data exchange in workflows.</p>
+                         <p><i class="bi bi-check"></i> Airflow complex automation workflows.</p>
+                        <p><i class="bi bi-check"></i> Advanced data analysis workflows: analysis, scheduling, resources.</p>
+                        <p><i class="bi bi-check"></i> Workflows specialized for different application domains.</p>
+                        <p><i class="bi bi-check"></i> GenAI/LLM workflow hands-on: using workflow technologies to design and create workflows integrating AI/LLM services with multiple types of other services for complex business processes.</p>
 
-        <div class="container" data-aos="fade-up">
-  
-          <header class="section-header">
-            <h4><a href=""><b>TRAINING AND BUILDING TEAMS</b></a></h4>
-            <p></p>
-          </header>
-  
-          <!-- Feature Tabs -->
-        <div class="row feture-tabs" data-aos="fade-up">
-            <div class="col-lg-6">
-              <!-- Tabs -->
-              <ul class="nav nav-pills mb-3">
-                <li>
-                  <a class="nav-link active" data-bs-toggle="pill" href="#tab0">Core courses in Data Platforms, AI/ML/LLMs Systems, Cloud Modernization</a>
-                </li>
-                <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab1">Customized courses with hands-on for practitioners</a>
-                </li>
-                <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab2">AI training modules tailored for development teams</a>
-                </li>
-                <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab3">On-project training and workshops</a>
-                </li>
-              </ul><!-- End Tabs -->
-              </div>
-              <div class="col-lg-6">
-  
-              <!-- Tab Content -->
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="tab0" style="background-color: #f6f9ff;">
-                  <p><b style="color: #884a10;">Core-1: DIGITAL TRANSFORMATION</b></p>
-                  
-                  <p><i class="bi bi-check"></i> Modernizing, Transforming and Automating Business and Operation Workflows with IoT, Data Analytics, and Cloud Services</p>
-                  <p><i class="bi bi-check"></i> Making Data-centric Decision and Building Digital Workforce</p>
-                  <p>------------------------------------------------------------------------------------------------------------------------</p>
-                  
-                  <p><b style="color: #884a10;"> Core-2: DATA PLATFORM FUNDAMENTALS AND TECHNOLOGIES</b></p>
-                  
-                  <p><i class="bi bi-check"></i> Fundamentals and technologies for versatile data journeys: including architectures,  data lifecycle management, data lakehouse and tiering,  workflow analysis, and near real-time stream processing</p>
-                  <p>------------------------------------------------------------------------------------------------------------------------</p>
-                  
-                  <p><b style="color: #884a10;"> Core-3: AI AGENTS, GENAI SERVICES, AND AGENTIC SYSTEMS</b></p>
-                  
-                  <p><i class="bi bi-check"></i> Fundamentals on large language models (LLMs) and agentic systems utilization, services and application integration for development and business tasks</p>
-                  <p>------------------------------------------------------------------------------------------------------------------------</p>
-
-                  <p><b style="color: #884a10;"> Core-4: AI IMPLEMENTATION STRATEGIES, TRUSTWORTHINESS AND RISKS</b></p>
-                  
-                  <p><i class="bi bi-check"></i> Understand Potentials, Requirements, and How to apply: ML and AI/GenAI capabilities and their relationships for common use cases</p>
-                  <p><i class="bi bi-check"></i> Trustworthy AI/GenAI, Principles and components of trustworthiness, potential risks and risk governance frameworks</p>
-                  <p>------------------------------------------------------------------------------------------------------------------------</p>
-                  
-
-                </div><!-- End Tab 0 Content -->
-                <div class="tab-pane fade show" id="tab1" style="background-color: #f6f9ff;">
-                  <p><b style="color: #884a10;"> Prac-1: PRINCIPLES TO HANDLE DATA QUALITY</b></p>
-                  
-                  <p><i class="bi bi-check"></i> High level view on Data Quality & Key principles to handle Data Quality</p>
-                  <p><i class="bi bi-check"></i> Data quality in real-time systems</p>
-                  <p><i class="bi bi-check"></i> Tools and hands-on</p>
-                  <p>------------------------------------------------------------------------------------------------------------------------</p>
-
-                  <p><b style="color: #884a10;"> Prac-2: DATA ANALYTICS FOR OPERATIONS</b></p>
-                  
-                  <p><i class="bi bi-check"></i> Data analytics for common use cases and suitable solutions for data platforms and infrastructure operations</p>
-                  <p><i class="bi bi-check"></i> Workflows, Tools and hands-on</p>
-                  <p>------------------------------------------------------------------------------------------------------------------------</p>
-
-                  <p><b style="color: #884a10;"> Prac-3: MACHINE LEARNING (ML) ENGINEERING</b></p>
-                  
-                  <p><i class="bi bi-check"></i> Preparing data, building, training, and deploying machine learning models and services</p>
-                  <p><i class="bi bi-check"></i> Workflows, Tools and techniques</p>
-                  <p><i class="bi bi-check"></i> Hands-on with real cases of customers/practitioners</p>
-                  <p>------------------------------------------------------------------------------------------------------------------------</p>
-
-                  <p><b style="color: #884a10;"> Prac-4: WORKFLOW SYSTEMS AND PROGRAMMING SPECIALIZATION</b></p>
-                  
-                  <p><i class="bi bi-check"></i> Workflow and Distributed Programming Models</p>
-                  <p><i class="bi bi-check"></i> Airflow Introduction and Hands-on basic workflow</p>
-                  <p><i class="bi bi-check"></i> Managing data exchange in workflows</p>
-                  <p><i class="bi bi-check"></i> Airflow complex automation workflows</p>
-                  <p><i class="bi bi-check"></i> Advanced data analysis workflows: analysis, scheduling, resources</p>
-                  <p><i class="bi bi-check"></i> Workflows specialized for different application domains</p>
-                  <p><i class="bi bi-check"></i> GenAI/LLM workflow hands-on: using workflow technologies to design and create workflows integrating AI/LLM services with multiple types of other services for complex business processes</p>
-                  <p>------------------------------------------------------------------------------------------------------------------------</p>
-
-                </div><!-- End Tab 1 Content -->
-  
-                <div class="tab-pane fade show" id="tab2">
-                  <p><i class="bi bi-rocket-fill"></i> 3 training levels: <b style="color: #884a10;"> AI in general, AI engineering, AI advanced</b></p>
-                  <p><i class="bi bi-rocket-fill"></i><i> 2-6 hours/module</i></p>
-                  <p><i class="bi bi-rocket-fill"></i> Targets:</p>
-                  <p><i class="bi bi-check"></i> Making strategic AI decisions, developing AI strategies and roadmap for digital transformation, evaluating AI risks</p>
-                  <p><i class="bi bi-check"></i> Assess existing solutions/tools, integrate existing solutions/tools, designing AI/ML services with current infrastructures/systems, modernizing IT services</p>
-                  <p><i class="bi bi-check"></i> Understanding AI/ML programming, coding/developing AI/ML models, training/deploying AI/ML services/models, monitoring and managing AI/ML services (observability)</p>
-                  <p><i class="bi bi-arrow-right"></i><a href="docs/training/DAIENSO_Training_2026.pdf"> AI training details</a></p>
-                  
-                </div><!-- End Tab 2 Content -->
-
-                <div class="tab-pane fade show" id="tab3">
-                  <p><i class="bi bi-rocket-fill"></i> Customized workshops, training and building teams <b style="color: #884a10;">for IoT-Edge-Cloud, AI/ML/LLMs, Automated and Data Analytics Workflows projects</b></p>
-                  <p><i class="bi bi-rocket-fill"></i><i> 3 hours/1 day/3 days/on-project training</i></p>
-                  
-                </div><!-- End Tab 3 Content -->
-  
-              </div>
-              </div>
+                      </div>
+                    </div>
+                  </div><!-- End Feature Item -->
             </div>
-  
-            <!--div class="col-lg-6">
-              <img src="assets/img/challenges.jpg" class="img-fluid" alt="">
-            </div-->
-  
-          </div><!-- End Feature Tabs -->
-  
-        </div>
-  
-      </section><!-- End Training Section -->
+          </div>
+      </div>
 
+    </section>
+
+    <section id="AItraining" class="service-details section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+        
+            <h4>AI training modules tailored for development teams</h4>
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-5">
+                <div class="col-lg-8">
+                    <div class="service-content">
+                        <div class="service-description" data-aos="fade-up" data-aos-delay="300">
+                            
+                            <p class="lead">Targets:</p>
+            
+                            <p><i class="bi bi-check"></i> Making strategic AI decisions, developing AI strategies and roadmap for digital transformation, evaluating AI risks.</p>
+            
+                            <p><i class="bi bi-check"></i> Assess existing solutions/tools, integrate existing solutions/tools, designing AI/ML services with current infrastructures/systems, modernizing IT services.</p>
+                            <p><i class="bi bi-check"></i> Understanding AI/ML programming, coding/developing AI/ML models, training/deploying AI/ML services/models, monitoring and managing AI/ML services (observability).</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-sidebar">
+                        <div class="sidebar-widget service-info" data-aos="fade-up" data-aos-delay="200">
+                            <h4>AI Modules Information</h4>
+                            <ul class="service-details-list">
+                              <li><strong>Duration:</strong> 2-6 hours/module</li>
+                              <li><strong>Team Size:</strong> 5-10 specialists</li>
+                              <li><strong>Training Levels:</strong> AI in general, AI engineering, AI advanced</li>
+                              <li><strong>Details:</strong> <a href="docs/training/DAIENSO_Training_2026.pdf"> AI training brochure</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="portfolio section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-conclusion" data-aos="fade-up" data-aos-delay="400">
+                <div class="conclusion-content">
+                  <h4>Ready to transform your business? CONTACT US NOW!</h4>
+                  <p>contact@daienso.com</p>
+                  
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer dark-background">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center">
-            <header class="section-header">
-              <h4>Ready to transform your business? CONTACT US NOW!</h4>
-              <h4><a href=""><b>contact@daienso.com</b></a></h4>
-            </header>            
-          </div>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">DAIENSO</span>
+          </a>
+          <p>A Research-driven Consulting company in IoT-Edge-Cloud services and autonomous processes; AI/ML/LLMs and smart solutions; Data policy, governance, and management.</p>
+          <p> Business Registration No: 0402220654</p>
+            
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Further Links</h4>
+          <ul>
+            <li><a href="research.html">Publications</a></li>
+            <!-- <li><a href="service_packages.html">Service Pakages</a></li> -->
+            <li><a href="products.html">Research Products</a></li>
+            <li><a href="https://github.com/daienso">Open Sources</a></li>
+            <li><a href="https://daienso.substack.com/">Tech Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Academic Courses</h4>
+          <ul>
+            <li><a href="https://github.com/rdsea/bigdataplatforms">Big Data Platforms</a></li>
+            <li><a href="https://github.com/rdsea/sys4bigml">Engineering ML Systems</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
           
+          <p>Da Nang, DN 50000</p>
+          <p>Vietnam</p>
+          <p class="mt-4"><strong>Web:</strong> <span>www.daienso.com</span></p>
+          <p><strong>Email:</strong> <span>contact@daienso.com</span></p>
         </div>
+
       </div>
     </div>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <!-- <span>Daienso</span> -->
-            </a>
-            <p>A Research-driven Consulting company in IoT-Edge-Cloud services and autonomous processes; ML/AI and smart solutions; Data policy, governance, and management</p>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Further Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="research.html">Publications</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="products.html">Research Products</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://daienso.substack.com/">Tech Blog</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Proof-Of-Concepts</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/daienso/fansipanpub.git">FANSIPAN</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/daienso/fansipan-afs">FANSIPAN-AFS</a></li>
-              <!-- li><i class="bx bx-chevron-right"></i> <a href="https://github.com/collms/culao">CuLao COLLMS</a></li -->
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              Da Nang, DN 50000 <br>
-              Vietnam <br><br>
-              <strong>Web:</strong> www.daienso.com<br>
-              <strong>Email:</strong> contact@daienso.com<br>
-            </p>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright (2023) <strong><span>DAIENSO Lab</span></strong>. All Rights Reserved
-      </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">DAIENSO</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer> <!-- End Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>

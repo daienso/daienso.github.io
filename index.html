@@ -4,541 +4,589 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>DAIENSO Lab</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: FlexStart
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Template Name: Axis
+  * Template URL: https://bootstrapmade.com/axis-bootstrap-corporate-template/
+  * Updated: Sep 13 2025 with Bootstrap v5.3.8
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<body>
+<body class="index-page">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo1.png" alt="">
-        <img src="assets/img/logo.png" alt="">
-        <!-- <span>Lab</span> -->
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo1.png" alt=""> 
+        <img src="assets/img/logo.png" alt=""> 
+        <!-- <h1 class="sitename">Axis</h1> -->
       </a>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Giới thiệu</a></li>
-          <li class="dropdown"><a href="#services"><span>Dịch vụ</span><i class="bi bi-chevron-down"></i></a>
+          <li><a href="#hero" class="active">Giới thiệu</a></li>
+          <li class="dropdown"><a href="#services"><span>Dịch vụ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="service_packages.html">Packages</a></li>
-            </ul>
-          <li class="dropdown"><a href="#research"><span>Nghiên cứu</span><i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="research.html">Publications</a></li>
+              
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="products.html">Sản phẩm</a></li>
-          <li><a class="nav-link scrollto" href="https://github.com/daienso" target="_blank">Mã mở GitHub</a></li>
-          <li><a class="nav-link scrollto" href="#about">Về chúng tôi</a></li>
+          <li class="dropdown"><a href=""><span>Nghiên cứu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="research.html">Publications</a></li>
+              <li><a href="products.html">Research Products</a></li>
+            </ul>
+          </li>
+          <li><a href="https://github.com/daienso">Mã mở GitHub</a></li>
+          <li><a href="#why-us">Về chúng tôi</a></li>
           
-          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-          <li><a class="getstarted scrollto" href="index_en.html">English</a></li>
+          <li><a href="index_en.html" style="color: #fb8500;"><b>English</b></a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center">
+  <main class="main">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Nghiên cứu, tư vấn và phát triển giải pháp</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400"><b>Hệ thống dịch vụ IoT/IIoT, Edge & Cloud; AI/ML/LLMs & Phân Tích Dữ Liệu Lớn; Quá Trình Tự Động</b> </h2>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-start">
-              <a href="#values" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Tìm hiểu thêm</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
 
-  </section><!-- End Hero -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  <main id="main">
-    <!-- ======= About Section ======= 
-    <section id="about" class="about">
-
-      <div class="container" data-aos="fade-up">
-        
-      </div>
-
-    </section> End About Section -->
-
-    <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h1>Khả năng và Giá trị khác biệt</h1>
-          <p>Empowering trust by advancing service quality</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <img src="assets/img/values-1.png" class="img-fluid" alt="">
-              <h3>Chuyên gia và chuyên môn sâu</h3>
-              <p>Đội ngũ kết hợp chuyên gia nội địa và chuyên gia quốc tế nhiều kinh nghiệm tham gia triển khai dự án, hệ thống và sản phẩm phần mềm phức tạp</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <img src="assets/img/values-2.png" class="img-fluid" alt="">
-              <h3>Nền tảng nghiên cứu học thuật</h3>
-              <p>Nền tảng nghiên cứu sâu rộng mang tính học thuật thế giới, giải pháp và sản phẩm tự phát triển từ nghiên cứu kết hợp với mã mở</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-            <div class="box">
-              <img src="assets/img/values-3.png" class="img-fluid" alt="">
-              <h3>Giải pháp mở và linh động cho ngữ cảnh Việt Nam</h3>
-              <p>Xây dựng và làm chủ công nghệ học máy, dữ liệu lớn, quá trình tự động được thiết kế bởi và tạo ra bên trong Việt Nam</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Values Section -->
-
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="features">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h1>Dịch vụ</h1>
-          <p>Nghiên cứu tiền khả thi, Tư vấn, và Phát triển giải pháp</p>
-        </header>
-        <div class="row  text-center">
-          <p>Cho các ứng dụng trong Dự đoán bảo trì, Digital Twins, 
-            Manufacturing/Industry 5.0, Viễn thông, Giám sát chất lượng, Quản lý năng lượng và bền vững</p>
-          </div>
-        
-        <div>
-            <img src="assets/img/DaiensoCore.svg" class="img-fluid" data-aos="fade-up" alt="">
-          </div>
-        <!--div class="row">
-
-        </div--> <!-- / row -->
-        <!-- Feature Tabs -->
-        <div class="row feture-tabs" data-aos="fade-up">
+        <div class="row align-items-center">
           <div class="col-lg-6">
-            <!-- Tabs -->
-            <ul class="nav nav-pills mb-3">
-              <li>
-                <a class="nav-link active" data-bs-toggle="pill" href="#tab0">Nghiên cứu và đánh giá tiền khả thi</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab1">Phân tích dữ liệu trên nền Edge Cloud</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Xây dựng giải pháp chuyển đổi với AI/ML/GenAI</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Phát triển học máy cho giám sát và quá trình tự động</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab4">Tư vấn chiến lược đồng phát triển đội ngũ</a>
-              </li>
-            </ul><!-- End Tabs -->
-          </div>
-          <div class="col-lg-6">
-            <!-- Tab Content -->
-            <div class="tab-content">
-              <div class="tab-pane fade show active" id="tab0">
-                <p>Thực hiện <b>đánh giá tiền khả thi (prestudy)</b> cho hệ thống <a href="docs/factsheet/ENSONUUMconsulting.png">IoT/IIoT, edge và cloud continuum</a>, phần mềm và phân tích dữ liệu.</p>
-                <p>Cung cấp các nghiên cứu khả thi (feasibility analysis/study); xây dựng kiến trúc ban đầu cho hệ thống; kiểm thử (performance testing/benchmarking), đánh giá các chọn lựa có thể cho giải pháp (solution candidates).</p>
-              </div><!-- End Tab 0 Content -->
-
-              <div class="tab-pane fade show" id="tab1">
-                <p>Cung cấp các giải pháp về <b>quản trị dữ liệu</b> (data governance); <b><a href="https://doi.org/10.1145/3708014">chất lượng dữ liệu</a></b> (data quality); <b>phân tích dữ liệu</b> (data analysis); xây dựng mô hình học máy với độ tin cậy, tính hiệu quả và giải thích.</p>
-                <p>Cung cấp các thiết kế <a href="https://www.researchgate.net/publication/361261810_Robustness_via_Elasticity_Accelerators_for_the_IoT-Edge-Cloud_Continuum">ứng dụng IoT/IIoT Edge Cloud</a> dựa trên <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=juCwRycAAAAJ&citation_for_view=juCwRycAAAAJ:NXb4pA-qfm4C">nguyên lý kỹ thuật trong hệ thống IoT Edge Cloud</a> mang tính <a href="https://www.researchgate.net/profile/Hong-Linh-Truong/publication/340272410_ASRE_-Towards_Application-specific_Resource_Ensembles_across_Edges_and_Clouds/links/612e5704c69a4e48796e8881/ASRE-Towards-Application-specific-Resource-Ensembles-across-Edges-and-Clouds.pdf"> mở rộng </a>, tin cậy và hiệu quả, ngay cả với <a href="https://link.springer.com/article/10.1007/s40860-022-00176-3">hạ tầng kém.</a></p>
-              </div><!-- End Tab 1 Content -->
-
-              <div class="tab-pane fade show" id="tab2">
-                <p><b>Đánh giá, chọn lựa mô hình và giải pháp tích hợp GenAI/LLMs</b> theo các khía cạnh về tính trách nhiệm (responsibility), giải thích (explainability) và quản lý rủi ro trong AI (AI risk management) dựa trên yêu cầu của ứng dụng/domain.</p>
-                <p>Thiết kế và tích hợp các tính năng của GenAI/LLMs trên cloud/on-premise/edge.</p>
-              </div><!-- End Tab 2 Content -->
-
-              <div class="tab-pane fade show" id="tab3">
-                <p>Phát triển và tư vấn các kỹ thuật <a href="https://acris.aalto.fi/ws/portalfiles/portal/108507769/main.pdf"> giám sát và tự động cho nhiều khía cạnh và ngữ cảnh</a>.</p>
-                <p>Nghiên cứu và phát triển <a href="https://research.aalto.fi/files/91823963/main.pdf">nền tảng (platforms) và hạ tầng cho phân tích dữ liệu/học máy</a>, <a href="https://www.researchgate.net/publication/329066633_Integrated_Analytics_for_IIoT_Predictive_Maintenance_Using_IoT_Big_Data_Cloud_Systems"> phân tích tích hợp cho bảo trì</a> và mô hình dịch vụ cho học máy.</p>
-                <p>Quy trình tự động kết nối phân tích dữ liệu, học máy và trí tuệ nhân tạo với dịch vụ của doanh nghiệp và con người trong doanh nghiệp, cũng như giải pháp về <a href="https://github.com/rdsea/iot2018tutorial">liên thông trong IoT</a>.</p>
-              </div><!-- End Tab 3 Content -->
-
-              <div class="tab-pane fade show" id="tab4">
-                <p><b>Tư vấn chiến lược đồng hướng dẫn cách phát triển đội ngũ</b> phân tích dữ liệu lớn và học máy cho <a href="https://github.com/rdsea/bigdataplatforms">xây dựng nền tảng dữ liệu lớn (big data platforms)</a>.</p>
-                <p>Cung cấp đào tạo chuyên sâu về <a href="docs/training/BigDataTraining-CasesTraining.pdf">phân tích dữ liệu lớn cho vận hành</a>, <a href="https://github.com/rdsea/sys4bigml">xây dựng hệ thống học máy</a>, và tiến hành <a href="docs/training/DigitalTransformation-extended-training-schedule_redacted.pdf">Chuyển đổi số</a>.</p>
-              </div><!-- End Tab 4 Content -->
-
-            </div>
-            </div>
-          </div>
-          <!-- div>
-            <img src="assets/img/core.svg" class="img-fluid" data-aos="fade-up" alt="">
-          </div -->
-
-        </div><!-- End Feature Tabs -->
-
-        <!-- Feature Icons -->
-        <!-- <div class="row feature-icons" data-aos="fade-up">
-          <h3>Phương pháp, công cụ và framework của Daienso</h3>
-
-          <div class="row"> 
-
-            
-            <div class="col-xl-2 text-center" data-aos="fade-right" data-aos-delay="100">
-            </div>
-            <div class="col-xl-8 d-flex content">
-              <div class="row align-self-center gy-4">
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="ri-stack-line"></i>
-                  <div>
-                    <h4>LATTE</h4>
-                    <p>Công cụ và phần mềm cho quản trị và quan sát chất lượng data trên nền tảng dữ liệu lớn (Big data platforms) đảm bảo tính chính xác và độ tin cậy cho vận hành, phân tích, và dự báo. Công cụ và dịch vụ cho triển khai các luồng dữ liệu (data pipelines), chức năng ML/AI, các giải pháp thông minh theo thời gian thực.</p>
-                    <p>Xem thêm: <a href="docs/factsheet/LatteqCheatSheet.pdf">LATTE-Q</a>, <a href="https://doi.org/10.1145/3708014">TENSAI</a>, <a href="https://acris.aalto.fi/ws/portalfiles/portal/91823963/main.pdf">HAIVAN</a> </p>
-                  </div>
+            <div class="hero-content">
+              <h1 data-aos="fade-up" data-aos-delay="200">Nghiên cứu, tư vấn và phát triển giải pháp</h1>
+              <p data-aos="fade-up" data-aos-delay="300">Hệ thống dịch vụ IoT/IIoT, Edge & Cloud; AI/ML/LLMs & Phân Tích Dữ Liệu Lớn; Quá Trình Tự Động.</p>
+              <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="#services" class="btn-primary">Tìm hiểu thêm</a>
+                
+              </div>
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                
+                <div class="stat-item">
+                  <div class="stat-number">Services</div>
+                  <div class="stat-label">Consulting, Training, and Assessment</div>
                 </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="ri-magic-line"></i>
-                  <div>
-                    <h4>DAIENSO Anomaly Detection</h4>
-                    <p>Mô hình học máy, pipeline và dịch vụ cho phát hiện bất thường và dự báo cho dữ liệu theo chuỗi thời gian (time-series data) dựa trên ngữ cảnh vận hành và kết hợp các giải thuật (state-of-the-art) nhằm tăng độ chính xác và dễ dàng tích hợp, mở rộng.</p>
-                    <p>Xem thêm: <a href="docs/factsheet/DAD.png">DAD</a></p>
-                  </div>
+                <div class="stat-item">
+                  <div class="stat-number">Collaborations</div>
+                  <div class="stat-label">Research Collaboration and Product Co-development</div>
                 </div>
-
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                  <i class="ri-radar-line"></i>
-                  <div>
-                    <h4>FANSIPAN</h4>
-                    <p>Framework cung cấp giải pháp thông minh trong giám sát (tìm kiếm, quản lý, lưu trữ) và phát hiện (object detection, anomaly detection) cho hệ thống camera và sensors với khả năng mở rộng và liên thông.</p>
-                    <p>Xem thêm: <a href="docs/factsheet/Fansipan.png">Fansipan Factsheet</a>, <a href="https://github.com/daienso/fansipan-afs">Analytics Feature Space</a>, <a href="https://drive.google.com/file/d/1rzRWEt5dXMO-wbXzklXbT5IZi3UYJSja/view">Project video</a></p>
-                  </div>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                  <i class="ri-line-chart-line"></i>
-                  <div>
-                    <h4>YALY</h4>
-                    <p>Framework cho dịch vụ LLM/AI assisants trên nền on-premise và lập trình LLM/AI assistants cho quá trình quản lý và giám sát và tác vụ thương mại.</p>
-                    <p>Xem thêm: <a href="docs/slides/CuLao_poster-GoodIT-2024.pdf">CuLao</a>, <a href="https://acris.aalto.fi/ws/portalfiles/portal/162130078/collms_position.pdf">COLLMS</a></p>
-                  </div>
-                </div>
-
               </div>
             </div>
-            <div class="col-xl-2 text-center" data-aos="fade-right" data-aos-delay="100">
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+              <img src="assets/img/header.png" alt="Fuji" class="img-fluid">
+              <div class="floating-card" data-aos="zoom-in" data-aos-delay="600">
+                <div class="card-icon">
+                  <i class="bi bi-buildings"></i>
+                </div>
+                <div class="card-content">
+                  <div class="growth-percentage">A Research-driven</div>
+                  <h5>Consulting Company</h5>
+                </div>
+              </div>
             </div>
           </div>
-
-        </div> -->  <!-- End Feature Icons -->
-
-      </div>
-
-    </section><!-- End Services Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
-
-
-
-    <!-- ======= Researchs Section ======= -->
-    <section id="research" class="clients">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h1>Nghiên cứu</h1>
-          <p>Lĩnh vực nghiên cứu và phát triển</p>
-        </header>
-        <div class="row">
-
-        </div> <!-- / row -->
-
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <!--div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div-->
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <!-- <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div> -->
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
+
       </div>
 
-    </section><!-- End Clients Section -->
+    </section><!-- /Hero Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="about" class="about">
+    <!-- Service Section -->
+    <section id="services" class="about section">
 
-      <div class="container" data-aos="fade-up">
-        <header class="section-header">
-          
-          <p>Về DAIENSO Lab</p>
-        </header>
-        <div class="row gx-0">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Dịch vụ</span>
+        <h2>Nghiên cứu tiền khả thi, Tư vấn, và Phát triển giải pháp</h2>
+        <p>Cho các ứng dụng trong Dự đoán bảo trì, Manufacturing/Industry 5.0, Digital Twins, 
+          Viễn thông, Giám sát chất lượng, Quản lý năng lượng và bền vững</p>
+      </div><!-- End Section Title -->
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="content">
-              <h3>Thông tin chung</h3>
-              <p>
-                Daienso Lab thành lập với mục tiêu phát triển các giải pháp và nền tảng thông minh theo thời gian thực (real-time) thích ứng với nhu cầu của các thị trường công nghiệp đang phát triển với mục tiêu: (1) ứng dụng và kết hợp các kỹ thuật phân tích dựa trên dữ liệu và AI/ML/LLMs; (2) nghiên cứu và phát triển các giải pháp chuyển đổi và hiện đại hóa dựa trên ngữ cảnh và các điều kiện vận hành cụ thể, riêng biệt của từng doanh nghiệp; (3) giải quyết các vấn đề hạn chế về chuyên gia, tài nguyên, cơ sở hạ tầng cho việc triển khai AI/ML/LLMs, IoT-Edge-Cloud Continuum và tự động hóa quá trình.</p>
+              
+              <p class="lead" style="color: #05445e;">Nhằm mục đích đồng hành cùng các doanh nghiệp triển khai chuyển đổi với IoT-Edge-Cloud, AI/ML autonomy và hiện đại hóa.</p>
+
+              <p><i class="bi bi-check-circle-fill" style="color: #189ab4;"></i> Cung cấp giải pháp khai thác hiệu quả các nguồn dữ liệu, kết hợp với quản trị/chính sách dữ liệu và khả năng tương tác dữ liệu.</p>
+
+              <p><i class="bi bi-check-circle-fill" style="color: #189ab4;"></i> Cung cấp giải pháp cho các kịch bản phức tạp dựa trên mô hình IoT-Edge-Cloud, tích hợp phân tích dữ liệu, AI/ML và các quy trình tự động hóa.</p>
+
+              <p><i class="bi bi-check-circle-fill" style="color: #189ab4;"></i> Hướng dẫn đội ngũ chuyên gia xây dựng giải pháp IoT-Edge-Cloud, AI/ML và quy trình làm việc tự động nhằm giải quyết các vấn đề của doanh nghiệp một cách liên tục.</p>
+
             </div>
           </div>
 
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-wrapper">
+              <img src="assets/img/DaiensoCore.png" alt="About us" class="img-fluid">
+              
+              </div>
+            </div>
           </div>
-
         </div>
+
       </div>
 
-    </section><!-- End About Section -->
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    </section><!-- /Service Section -->
 
-      <div class="container" data-aos="fade-up">
+    <!-- Services Section -->
+    <section id="offers" class="services section">
 
-        <header class="section-header">
-          <h3><a href="">Đội ngũ sáng lập</a></h3>
-        </header>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <span class="subtitle">Services</span> -->
+        <h2>Chi tiết các dịch vụ</h2>
+        <h5 style="color: #303235;">Empowering trust by advancing service quality</h5>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Nghiên cứu và đánh giá tiền khả thi</h3>
+              <p>Thực hiện <b>đánh giá tiền khả thi (prestudy)</b> cho hệ thống <a href="docs/factsheet/ENSONUUMconsulting.png">IoT/IIoT, edge và cloud continuum</a>, phần mềm và phân tích dữ liệu.</p>
+              <p>Cung cấp các nghiên cứu khả thi; xây dựng kiến trúc ban đầu cho hệ thống; kiểm thử, đánh giá các chọn lựa có thể cho giải pháp (solution candidates).</p>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <h3>Phân tích dữ liệu trên nền Edge Cloud</h3>
+              <p>Cung cấp các giải pháp về <b>quản trị dữ liệu</b>; <b><a href="https://doi.org/10.1145/3708014">chất lượng dữ liệu</a></b>; <b>phân tích dữ liệu</b>.</p>
+              <p>Cung cấp các thiết kế <a href="https://www.researchgate.net/publication/361261810_Robustness_via_Elasticity_Accelerators_for_the_IoT-Edge-Cloud_Continuum">ứng dụng IoT/IIoT Edge Cloud</a> dựa trên <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=juCwRycAAAAJ&citation_for_view=juCwRycAAAAJ:NXb4pA-qfm4C">nguyên lý kỹ thuật trong hệ thống IoT Edge Cloud</a> mang tính <a href="https://www.researchgate.net/profile/Hong-Linh-Truong/publication/340272410_ASRE_-Towards_Application-specific_Resource_Ensembles_across_Edges_and_Clouds/links/612e5704c69a4e48796e8881/ASRE-Towards-Application-specific-Resource-Ensembles-across-Edges-and-Clouds.pdf"> mở rộng</a>, tin cậy và hiệu quả, ngay cả với <a href="https://link.springer.com/article/10.1007/s40860-022-00176-3">hạ tầng kém.</a></p>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <h3>Giải pháp chuyển đổi với AI/ML/GenAI</h3>
+              <p><b>Đánh giá, chọn lựa mô hình và giải pháp tích hợp GenAI/LLMs</b> theo các khía cạnh về tính trách nhiệm, giải thích và quản lý rủi ro trong AI dựa trên yêu cầu của ứng dụng/domain.</p>
+              <p>Thiết kế và tích hợp các tính năng của GenAI/LLMs trên cloud/on-premise/edge.</p>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3>Giải pháp cho giám sát và quá trình tự động</h3>
+              <p>Phát triển và tư vấn các kỹ thuật <a href="https://acris.aalto.fi/ws/portalfiles/portal/108507769/main.pdf"> giám sát và tự động cho nhiều khía cạnh và ngữ cảnh</a>. Nghiên cứu và phát triển <a href="https://research.aalto.fi/files/91823963/main.pdf">nền tảng và hạ tầng cho phân tích dữ liệu/học máy</a>, <a href="https://www.researchgate.net/publication/329066633_Integrated_Analytics_for_IIoT_Predictive_Maintenance_Using_IoT_Big_Data_Cloud_Systems"> phân tích tích hợp cho bảo trì</a> và mô hình dịch vụ cho học máy.</p>
+              <p>Quy trình tự động kết nối phân tích dữ liệu, AI/ML với dịch vụ của doanh nghiệp và con người trong doanh nghiệp, cũng như giải pháp về <a href="https://github.com/rdsea/iot2018tutorial">liên thông trong IoT</a>.</p>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Tư vấn chiến lược đồng phát triển đội ngũ</h3>
+              <p><b>Tư vấn chiến lược đồng hướng dẫn cách phát triển đội ngũ</b> phân tích dữ liệu và học máy cho <a href="https://github.com/rdsea/bigdataplatforms">xây dựng nền tảng dữ liệu (data platforms)</a>.</p>
+              <p>Cung cấp đào tạo chuyên sâu về <a href="docs/training/BigDataTraining-CasesTraining.pdf">phân tích dữ liệu cho vận hành</a>, <a href="https://github.com/rdsea/sys4bigml">xây dựng hệ thống học máy</a>, và tiến hành <a href="docs/training/DigitalTransformation-extended-training-schedule_redacted.pdf">Chuyển đổi số</a>.</p>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <h3>Data Analytics</h3>
+              <p>Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+              <a href="service-details.html" class="service-link">
+                Learn More <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div> --> <!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Về DAIENSO Lab</span>
+        <h2>Thông tin chung</h2>
+        <p>Daienso Lab thành lập với mục tiêu phát triển các giải pháp và nền tảng thông minh theo thời gian thực (real-time) thích ứng với nhu cầu của các thị trường công nghiệp đang phát triển</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h4>Mục tiêu:</h4>
+              
+              <p><i class="bi bi-bullseye" style="color: #189ab4;"></i> Ứng dụng và kết hợp các kỹ thuật phân tích dựa trên dữ liệu và AI/ML/LLMs.</p>
+
+              <p><i class="bi bi-bullseye" style="color: #189ab4;"></i> Nghiên cứu và phát triển các giải pháp chuyển đổi và hiện đại hóa dựa trên ngữ cảnh và các điều kiện vận hành cụ thể, riêng biệt của từng doanh nghiệp.</p>
+
+              <p><i class="bi bi-bullseye" style="color: #189ab4;"></i> Giải quyết các vấn đề hạn chế về chuyên gia, tài nguyên, cơ sở hạ tầng cho việc triển khai AI/ML/LLMs, IoT-Edge-Cloud Continuum và tự động hóa quá trình.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-wrapper">
+              <img src="assets/img/about.jpg" alt="Professional team collaboration" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+          <div class="row g-5">
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-lightbulb"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Innovation Leadership</h3>
+                  <p>We stay ahead of industry trends, implementing cutting-edge technologies and methodologies that drive transformational results for your business growth.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-award"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Proven Expertise</h3>
+                  <p>Our team brings decades of combined experience across multiple industries, ensuring strategic insights and tactical execution that delivers measurable outcomes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>24/7 Dedicated Support</h3>
+                  <p>Round-the-clock availability with personalized attention from dedicated account managers who understand your unique challenges and objectives.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Cost Efficiency</h3>
+                  <p>Streamlined processes and intelligent resource allocation reduce overhead while maximizing ROI, delivering premium results within your budget parameters.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> -->
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Testimonials Section -->
+    <section id="core" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        
+        <h2>Khả năng và Giá trị khác biệt</h2>
+        <p>Empowering and Enabling</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-5">
+
+            <!-- Testimonial Slide 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-header">
+                  <img src="assets/img/values-1.png" alt="value" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                
+                <div class="testimonial-footer">
+                  <h5>Chuyên gia và chuyên môn sâu</h5>
+                  <p>Đội ngũ kết hợp chuyên gia nội địa và chuyên gia quốc tế nhiều kinh nghiệm tham gia triển khai dự án, hệ thống và sản phẩm phần mềm phức tạp.</p>
+                  
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+            <!-- Testimonial Slide 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="testimonial-header">
+                  <img src="assets/img/values-2.png" alt="value" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                
+                <div class="testimonial-footer">
+                  <h5>Nền tảng nghiên cứu học thuật</h5>
+                  <p>Nền tảng nghiên cứu sâu rộng mang tính học thuật thế giới, giải pháp và sản phẩm tự phát triển từ nghiên cứu kết hợp với mã mở.</p>
+                  
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+            <!-- Testimonial Slide 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="testimonial-header">
+                  <img src="assets/img/values-3.png" alt="value" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                
+                <div class="testimonial-footer">
+                  <h5>Giải pháp mở và linh động cho ngữ cảnh Việt Nam</h5>
+                  <p>Xây dựng và làm chủ công nghệ học máy, dữ liệu lớn, quá trình tự động được thiết kế bởi và tạo ra bên trong Việt Nam.</p>
+                  
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+            
+
+          </div>
+
+        
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Đội ngũ</span>
+        <h2>Đội ngũ sáng lập</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row justify-content-center" style="gap: 80px;">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/linh.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/linh.jpg" class="img-fluid" alt="Linh" loading="lazy">
               </div>
               <div class="member-info">
-                <h4><a href="http://www.linkedin.com/pub/hong-linh-truong/5/963/406">Trương Hồng Lĩnh</a></h4>
-                <span><b>Đồng sáng lập</b> </span>
-                <span><b>PhD, chuyên ngành khoa học máy tính</b> </span>
+                <h4>Trương Hồng Lĩnh</h4>
+                <span>Đồng sáng lập</span>
+                <p>PhD, chuyên ngành khoa học máy tính</p>
+                <div class="social">
+                  
+                  <a href="http://www.linkedin.com/pub/hong-linh-truong/5/963/406"><i class="bi bi-linkedin"></i></a>
+                  
+                </div>
               </div>
             </div>
-          </div>
+          </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/trang.jpg" class="img-fluid" alt="">
-                
+                <img src="assets/img/team/trang.jpg" class="img-fluid" alt="Trang" loading="lazy">
               </div>
               <div class="member-info">
-                <h4><a href="https://www.linkedin.com/in/ngoc-nhu-trang-nguyen-100920333/">Nguyễn Ngọc Như Trang</a></h4>
-                <span><b>Đồng sáng lập</b> </span>
-                <span><b>Nghiên cứu ứng dụng</b> </span>
+                <h4>Nguyễn Ngọc Như Trang</h4>
+                <span>Đồng sáng lập</span>
+                <p>Data/AI/ML, nghiên cứu ứng dụng</p>
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/ngoc-nhu-trang-nguyen-100920333/"><i class="bi bi-linkedin"></i></a>
+                  
+                </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/tu.jpg" class="img-fluid" alt="">
-                
-              </div>
-              <div class="member-info">
-                <h4><a href="">Nguyễn Văn Anh Tú</a></h4>
-                <span><b>R&D</b> </span>
-                <span><b>Kỹ sư cloud</b> </span>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/hieu.png" class="img-fluid" alt="">
-                
-              </div>
-              <div class="member-info">
-                <h4><a href="">Phan Hiếu</a></h4>
-                <span><b>R&D</b> </span>
-                <span><b>Kỹ sư MLOps</b> </span>
-              </div>
-            </div>
-          </div> -->
+          </div><!-- End Team Member -->
 
           
+
         </div>
 
       </div>
+
+    </section><!-- /Team Section -->
+
+    
+
+    <!-- Contact Section -->
+    <section id="techblog" class="contact section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Blog</span>
+        <h2>Blog công nghệ</h2>
+        <p><a href="https://daienso.substack.com/">DAIENSO Lab Tech News</a> chia sẻ góc nhìn từ kinh nghiệm triển khai, tư vấn; câu chuyện về giải pháp hệ thống dịch vụ IoT/IIoT, Edge & Cloud, Quá Trình Tự Động, AI/ML/LLMs & Phân Tích Dữ Liệu Lớn; và cập nhật tin tức, xu hướng công nghệ trên thế giới.</p>
+      </div><!-- End Section Title -->
+
       
-      </div>
 
-    </section><!-- End Team Section -->
-    
+    </section><!-- /Contact Section -->
 
-    <!-- <section id="parners" class="clients">
+  </main>
 
-      <div class="container" data-aos="fade-up">
+  <footer id="footer" class="footer dark-background">
 
-        <header class="section-header">
-          <h1>Đối tác</h1>
-          <p>Đối tác, khách hàng và dự án tiêu biểu</p>
-        </header>
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class=""><img src="assets/img/clients/blank.png" class="img-fluid" alt=""></div>
-            <div class=""><img src="assets/img/clients/gigarion.png" class="img-fluid" alt=""></div>
-            <div class=""><img src="assets/img/clients/tedev.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">DAIENSO</span>
+          </a>
+          <p>A Research-driven Consulting company in IoT-Edge-Cloud services and autonomous processes; AI/ML/LLMs and smart solutions; Data policy, governance, and management.</p>
+          <p> Business Registration No: 0402220654</p>
+            
         </div>
-      </div>
 
-    </section> --> <!-- End Clients Section --> 
-
-    <section id="techblog" class="clients" style="background-color: #f6f9ff;">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h1>Blog công nghệ</h1>
-          <!-- <p>DAIENSO Lab Tech News</p> -->
-        </header>
-
-        <div class="row  text-center">
-          <p><a href="https://daienso.substack.com/">DAIENSO Lab Tech News</a> chia sẻ góc nhìn từ kinh nghiệm triển khai, tư vấn; câu chuyện về giải pháp hệ thống dịch vụ IoT/IIoT, Edge & Cloud, Quá Trình Tự Động, AI/ML/LLMs & Phân Tích Dữ Liệu Lớn; và cập nhật tin tức, xu hướng công nghệ trên thế giới.</p>
-          </div>
-      </div>
-
-    </section> <!-- End Clients Section -->
-
-    
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <!-- <span>Daienso</span> -->
-            </a>
-            <p>A Research-driven Consulting company in IoT-Edge-Cloud services and autonomous processes; AI/ML/LLMs and smart solutions; Data policy, governance, and management</p>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Further Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="research.html">Publications</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="service_packages.html">Service Pakages</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="products.html">Research Products</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/daienso">Mã mở GitHub</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://daienso.substack.com/">Tech Blog</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Trình bày hội thảo/Bài giảng sau đại học</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="docs/slides/haivan-bigdata-2022.pdf">HAIVAN@IEEEBigData2022</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="docs/slides/dad-compsac-2023.pdf">DAD@IEEECompsac2023</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/rdsea/bigdataplatforms">Nền tảng Big Data: Big Data Platforms</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/rdsea/sys4bigml">Xây dựng hệ thống học máy: Engineering ML Systems</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              Da Nang, DN 50000 <br>
-              Vietnam <br><br>
-              <strong>Web:</strong> www.daienso.com<br>
-              <strong>Email:</strong> contact@daienso.com<br>
-            </p>
-
-          </div>
-
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Further Links</h4>
+          <ul>
+            <li><a href="research.html">Publications</a></li>
+            <li><a href="service_packages.html">Service Pakages</a></li>
+            <li><a href="products.html">Research Products</a></li>
+            <li><a href="https://github.com/daienso">Open Sources</a></li>
+            <li><a href="https://daienso.substack.com/">Tech Blog</a></li>
+          </ul>
         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Academic Courses</h4>
+          <ul>
+            <li><a href="https://github.com/rdsea/bigdataplatforms">Big Data Platforms</a></li>
+            <li><a href="https://github.com/rdsea/sys4bigml">Engineering ML Systems</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          
+          <p>Da Nang, DN 50000</p>
+          <p>Vietnam</p>
+          <p class="mt-4"><strong>Web:</strong> <span>www.daienso.com</span></p>
+          <p><strong>Email:</strong> <span>contact@daienso.com</span></p>
+        </div>
+
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright (2023) <strong><span>DAIENSO Lab</span></strong>. All Rights Reserved
-      </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">DAIENSO</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
